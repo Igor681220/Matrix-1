@@ -7,15 +7,23 @@
 
     <style>
         h1 { font-size: 30px; }
-    </style>
+       div {
+        width: 210px;	height: 170px; /* Размеры */
+        background: #fa2; /* Цвет фона */
+        # outline: 2px solid #000; /* Чёрная рамка */
+        border: 3px solid #fff; /* Белая рамка */
+        border-radius: 10px; /* Радиус скругления */
+       }
+  </style>
+
 </head>
 
 <body>
 
     <h1>Ульянов Игорь</h1>
     <p>Сергей Есенин</p><br>
-<p>Я обманывать себя не стану…<br>
-Я обманывать себя не стану,<br>
+    <p>Я обманывать себя не стану…<br><br>
+<p>Я обманывать себя не стану,<br>
 Залегла забота в сердце мглистом.<br>
 Отчего прослыл я шарлатаном?<br>
 Отчего прослыл я скандалистом?</p>
@@ -59,22 +67,25 @@
         <input type="text" placeholder="Введите свою фамилию" name="surname">
     </P>
         <input type="submit">
-        <button type="button" onclick="alert('HTML не сложный, его легко понять!')">Нажми меня!</button>
+        <button type="button" onclick="alert('HTML не сложный, его легко понять!')">Нажми меня!</button><br>
+<div>
+    <form>
+         <fieldset>
+             <legend>Personalising:</legend>
+                 <p>
+                    <input type="text" placeholder="Введите свое имя" name="name"><br>
+                 </p>
+                 <p>
+                    <input type="text" placeholder="Введите Ваш E-mail" name="E-mail"><br>
+                 </p>
+                 <p>
+                    <input type="text" placeholder="Введите дату рождения" name="birth">
+                 </p>
+         </fieldset>
+    </form>
+</div>
 
-<form>
- <fieldset>
-  <legend>Personalising:</legend>
-     <p>
-        <input type="text" placeholder="Введите свое имя" name="name"><br>
-     </p>
-     <p>
-        <input type="text" placeholder="Введите Ваш E-mail" name="E-mail"><br>
-     </p>
-     <p>
-        <input type="text" placeholder="Введите дату рождения" name="birth">
-     </p>
- </fieldset>
-</form>
+
 
 </body>
 </html>
