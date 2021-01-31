@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <title>my page</title>
 
-    <style>
+    <style type="text/css">
+       button.new {
+        background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+        padding: 3px 7px;
+        color: #333;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        border: 1px solid #666;
+       }
+
         h1 { font-size: 30px; }
        div {
         width: 210px;	height: 210px; /* Размеры */
-        background: #fa2; /* Цвет фона */
+        background: #008B8B; /* Цвет фона */
         # outline: 2px solid #000; /* Чёрная рамка */
         border: 3px solid #fff; /* Белая рамка */
         border-radius: 10px; /* Радиус скругления */
@@ -85,14 +97,14 @@
                  <p>
                     <input type="text" placeholder="Введите дату рождения" name="birth"><br>
                  </p>
-                 <p>
-                 <input type="submit" onclick="alert('HTML не сложный, его легко понять!')">
-                 </p>
+
+              <form action="">
+                  <p><button onclick="alert('HTML не сложный, его легко понять!')" class="new">Отправить</button></p>
+              </form>
+
          </fieldset>
     </form>
 </div>
-
-
 
 </body>
 </html>
