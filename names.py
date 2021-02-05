@@ -1,5 +1,5 @@
 import random
-from random import shuffle
+# from random import shuffle
 
 # вводим имена с заглавной или прописной буквы, разницы нет
 # все равно выведется список с Заглавной буквы
