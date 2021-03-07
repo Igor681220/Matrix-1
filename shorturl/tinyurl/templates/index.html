@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+
+    <style type="text/css">
+        button.new {
+        overflow:auto; /* add this */
+        background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00BBD6', endColorstr='#EBFFFF');
+        padding: 3px 7px;
+        color: #333;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 15px;
+        border: 1px solid #666;
+       }
+
+        h1 { font-size: 30px; }
+       div {
+        width: 210px;	height: 140px; /* Размеры */
+        background: #008B8B; /* Цвет фона */
+        # outline: 2px solid #000; /* Чёрная рамка */
+        border: 3px solid #fff; /* Белая рамка */
+        border-radius: 10px; /* Радиус скругления */
+       }
+  </style>
+
+</head>
+
+<body>
+
+<div>
+    <form>
+         <fieldset>
+             <legend align="center">
+                    Short your url
+             </legend>
+
+                 <p>
+                    <input type="text" placeholder="Введите URL" name="URL"><br>
+                 </p>
+             <form action="">
+                  <p><button onclick="alert('HTML не сложный, его легко понять!')" class="new">Отправить</button></p>
+             </form>
+
+         </fieldset>
+    </form>
+</div>
+
+ <h1>Short your url</h1>
+
+    <form action="/s/" method="post">
+        {% csrf_token %}
+        {{ url_form.as_p }}
+        <input type="submit"><br>
+    </form>
+
+</body>
+</html>
