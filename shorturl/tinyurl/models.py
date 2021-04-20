@@ -4,6 +4,7 @@ from django.db import models
 
 
 class ShortUrlModel(models.Model):
+    objects = None
     hash = models.CharField(max_length=32)
     url = models.TextField()
 
