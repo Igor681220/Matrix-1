@@ -12,8 +12,8 @@ def print_matrix(matrix, columns, rows):
 
 
 def generate_matrix(rows, columns):
-    M = [[randint(-10, 10) for i in range(1, rows+1)] for j in range(1, columns+1)]
-    return(M)
+    Magic = [[randint(-10, 10) for i in range(1, rows+1)] for j in range(1, columns+1)]
+    return(Magic)
 
 
 def matrix_control_of_null_rows_and_columns(matrix, rows, columns):
@@ -50,10 +50,11 @@ def main():
     print("\033[34m {}\033[0m".format(' - *' * 10))
     print('\n')
     print("\033[35m {}\033[0m".format("   - Original matrix -"))
-    M = generate_matrix(rows, columns)
-    print_matrix(M, rows=rows, columns=columns)
-    matrix_control_of_null_rows_and_columns(matrix=M, rows=rows, columns=columns)
-    print_matrix(M, rows=rows, columns=columns)
+    Magic = generate_matrix(rows, columns)
+    print_matrix(Magic, rows=rows, columns=columns)
+    matrix_control_of_null_rows_and_columns(matrix=Magic, rows=rows, columns=columns)
+    print_matrix(Magic, rows=rows, columns=columns)
+
 
 
 main()
